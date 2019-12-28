@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.UserProfile">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:padding="5dp"
+        android:background="#2a7"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/userProfileImage"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:id="@+id/userProfileFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:background="#00000000"
+                android:src="@drawable/ic_launcher_foreground"
+                android:contentDescription="Message"
+                android:text="Message"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:id="@+id/userProfileMessageUserButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp" />
+            <ImageButton
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:background="#00000000"
+                android:src="@mipmap/ic_launcher"
+                android:contentDescription="Album"
+                android:text="Album"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:id="@+id/userProfilePhotosAlbumButton"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_margin="3dp"
+                android:text="@string/user_profile_birthday_label"
+                android:id="@+id/userProfileBirthdayLabel"
+                android:textColor="@color/accent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_margin="3dp"
+                android:id="@+id/userProfileBirthdayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_margin="3dp"
+                android:text="@string/user_profile_details_label"
+                android:id="@+id/userProfileDetailsLabel"
+                android:textColor="@color/accent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_margin="3dp"
+                android:id="@+id/userProfileDetailsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_margin="3dp"
+                android:text="@string/user_profile_address_label"
+                android:id="@+id/userProfileAddressLabel"
+                android:textColor="@color/accent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_margin="3dp"
+                android:id="@+id/userProfileAddressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_margin="3dp"
+                android:id="@+id/userProfileStatusLabel"
+                android:text="@string/user_profile_status_label"
+                android:textColor="@color/accent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_margin="3dp"
+                android:id="@+id/userProfileStatusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:padding="3dp"
+        android:background="#2a7"
+        android:id="@+id/userProfileSelectedAlbum"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="5dp"
+        android:id="@+id/userProfileAlbumList"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+    <RelativeLayout
+        android:id="@+id/userProfileMessageLayout"
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone">
+        <EditText
+            android:id="@+id/userProfileMessageEdit"
+            android:padding="2dp"
+            android:layout_margin="3dp"
+            android:layout_marginEnd="40dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <Button
+
+            android:background="#00000000"
+            android:textColor="#2a7"
+            android:text="Send"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/userProfileMessageSendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

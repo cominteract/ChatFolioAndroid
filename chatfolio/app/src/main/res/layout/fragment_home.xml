@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:context=".ui.fragment.Home"
+    android:orientation="vertical"
+    tools:showIn="@layout/fragment_home">
+    <LinearLayout
+        android:background="#2a7"
+        android:padding="3dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="3dp"
+            android:id="@+id/homeImage"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:layout_margin="3dp"
+            android:id="@+id/homeLoggedUser"
+            android:background="#00000000"
+            android:textColor="#fff"
+            android:text="Logged as : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_margin="3dp"
+            android:id="@+id/homeLogoutButton"
+            android:background="#00000000"
+            android:textColor="#fff"
+            android:text="LOGOUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/homeSegmentLayout"
+        android:weightSum="1"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/homeTimelineBtn"
+            android:text="Timeline"
+            android:background="#00000000"
+            android:layout_margin="3dp"
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/photoTimelineBtn"
+            android:text="Photos"
+            android:background="#00000000"
+            android:layout_margin="3dp"
+            android:layout_weight=".23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/friendsTimelineBtn"
+            android:text="Friends"
+            android:background="#00000000"
+            android:layout_margin="3dp"
+            android:layout_weight=".23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/messagesTimelineBtn"
+            android:text="Messages"
+            android:background="#00000000"
+            android:layout_margin="3dp"
+            android:layout_weight=".28"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:background="#eee"
+        android:layout_margin="5dp"
+        android:id="@+id/homePostLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText
+            android:id="@+id/homePostMessageEdit"
+            android:padding="2dp"
+            android:layout_margin="3dp"
+            android:layout_marginEnd="40dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <Button
+
+            android:background="#00000000"
+            android:textColor="#2a7"
+            android:text="Send"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/homePostMessageSendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/homeFeedList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

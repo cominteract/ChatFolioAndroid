@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "191611006312",
+    "firebase_url": "https://chatfolio-9edb0.firebaseio.com",
+    "project_id": "chatfolio-9edb0",
+    "storage_bucket": "chatfolio-9edb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191611006312:android:5366fb179a7e4e89",
+        "android_client_info": {
+          "package_name": "com.ainsigne.chatfolio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191611006312-sarapmhscq5ta7svahqheru0mrpngg6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKMVkx_3XK7tpQMwC5mX8ArD1_ZemBxVw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

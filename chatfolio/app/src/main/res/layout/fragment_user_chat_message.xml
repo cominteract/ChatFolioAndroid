@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".ui.fragment.UserChatMessage">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText
+            android:id="@+id/userChatMessageEdit"
+            android:padding="2dp"
+            android:layout_margin="3dp"
+            android:layout_marginEnd="40dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <Button
+
+            android:background="#00000000"
+            android:textColor="#2a7"
+            android:text="Send"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/userChatMessageSendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/userChatMessageList"
+
+        android:layout_marginBottom="55dp"
+        android:padding="5dp"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+</RelativeLayout>

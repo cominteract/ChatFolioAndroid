@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:orientation="horizontal"
+    android:padding="15dp">
+    <ImageView
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:id="@+id/messageFeedImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <LinearLayout
+        android:layout_toEndOf="@id/messageFeedImage"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/messageFeedUserText"
+            android:layout_width="80dp"
+            android:textColor="#3245ff"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/messageFeedText"
+            android:layout_width="250dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:id="@+id/messageFeedDate"
+        android:layout_width="135dp"
+        android:textSize = "12sp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
